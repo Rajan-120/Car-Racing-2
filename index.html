@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background-position: top;
+    background-size: cover;
+	background-image:url("https://hips.hearstapps.com/hmg-prod/amv-prod-cad-assets/images/media/671589/2017-10best-cars-the-best-cars-for-sale-in-america-today-feature-car-and-driver-photo-672522-s-original.jpg") ;
+}
+#canvas1
+{
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
+}
+.h12{
+font-weight: 100;
+color: black;
+font-size: 25px;
+}
+#h41{
+	font-weight: 100;
+color: black;
+font-size: 18px;	
+}
+b{
+font-weight: 50;
+}
+#reset{
+	font-size: 15px;
+	width: 85px;
+	height: 22px;
+}
+</style>		
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Car Racing</title>
+</head>
+<body onload="add();">
+<center>
+<h1 class="h12">Car Racing</h1>
+<h1 class="h12">Game status: <span id="game_status"></span></h1>
+<button id="reset" onclick="resetCars()">Reset</button>
+<canvas width="1500" height="530" id="canvas1"></canvas>
+<h4>
+	<b class="text-danger" >NOTE : IF CARS ARE NOT VISIBLE PRESS ANY ARROW KEY</b>
+</h4>
+<h4 id="h41">
+PRESS WASD TO PLAY WITH YELLOW CAR.<p></p>PRESS RIGHT, LEFT, UP & DOWN ARROW KEY TO PLAY WITH RED CAR.
+</h4>
+</center>
+<script src="main.js">
+</script>
+</body>
+</html>
